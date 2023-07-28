@@ -6,6 +6,70 @@
     <title>Building HTML Forms</title>
 </head>
 <body>
+
+    <form action="/form-handling-url" method="post">
+        <fieldset>
+            <legend>Add User</legend>
+
+            <div>
+                <label for="first_name">First Name</label>
+                <input type="text" id="firstname" name="first_name">
+            </div>
+
+            <div>
+                <label for="last_name">Last Name</label>
+                <input type="text" id="lastname" name="last_name">
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email_address">
+            </div>
+
+            <div>
+                <label for="role">Role</label>
+                <select name="user_role_name" id="role">Status
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="guest">Guest</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Choose your favorite programming language.</p>
+                <input type="radio" name="language" id="programmingLanguage">
+                <label for="programmingLanguage">HTML</label>
+
+                <input type="radio" name="language" id="programmingLanguage">
+                <label for="programmingLanguage">CSS</label>
+                
+                <input type="radio" name="language" id="programmingLanguage">
+                <label for="programmingLanguage">JAVASCRIPT</label>
+            </div>
+            
+            <div>
+            <label for="comments">Comments</label>
+            <textarea name="user_comments" id="user_comments"></textarea>
+            </div>
+            
+            <div>
+                <label for="currentDate">Current Date</label>
+                <input type="date" name="current_date" id="date">
+            </div>
+            
+            <div>
+                <input type="checkbox" name="signUp" id="newsletter">
+                <label for="newsletter">Sign up for Newsletter</label>
+            </div>
+            <div>
+                <input type="checkbox" name="agree" id="terms_conditions">
+                <label for="agree_terms_conditions">Agree to terms and conditions</label>
+            </div>
+                <button type="submit">Submit</button>
+           
+
+        </fieldset>
+    </form>
     
 </body>
 </html>
